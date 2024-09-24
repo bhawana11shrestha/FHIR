@@ -1,0 +1,34 @@
+{
+    "resourceType": "Patient",
+    "name": [
+        {
+            "use": "official",
+            "given": ["Bhawana"],
+            "family": "Shrestha"
+        }
+    ],
+    "gender": "female",
+    "birthDate": "2001-12-27",
+    "telecom": [
+        {
+            "value": "9833443940",
+            "use": "mobile",
+            "system": "phone"
+        },
+        {
+            "system": "email",
+            "value": "bhawana@gmail.com"
+        }
+    ],
+    "address": [
+         {
+            "line": [
+                "1, changunarayan"
+            ],
+            "city": "Ktm",
+            "district": "bagmati",
+            "postalCode": "44800"
+         }
+    ]
+
+}

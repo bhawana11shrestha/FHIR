@@ -1,0 +1,46 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:patient",
+            "resource":{
+                "resourceType": "Patient",
+                "name": [
+                    {
+                        "given": [
+                            "HelloBhawana"
+                        ]
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient?name=HelloBhawana"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "testObservation",
+                            "system": "SomeRandomSystem",
+                            "display": "Test observatoin for Patient Hello Bhawana"
+                        }
+                    ]
+                },
+                "subject": {
+                    "type": "Patent",
+                    "reference": "urn:uuid:patient"
+                    
+                },
+                "valueInteger": 22
+            },
+            "request": {
+                "method": "POST"
+            }
+        }
+    ]
+}
